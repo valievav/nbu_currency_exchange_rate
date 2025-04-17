@@ -9,7 +9,7 @@
 
 *Task is executed in next steps*:
 1. Connect to NBU currency rates API (documentation https://bank.gov.ua/ua/open-data/api-dev point 1)
-2. Get rates for certain period and certain currency codes
+2. Get rates for certain period and certain currency codes (example https://bank.gov.ua/NBU_Exchange/exchange_site?start=20250216&end=20250417&valcode=usd&sort=exchangedate&order=desc&json)
 3. Load data to database (used SQLite)
 4. Check if some dates are missing
 5. Run API request for missing dates
