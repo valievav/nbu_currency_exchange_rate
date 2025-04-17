@@ -1,10 +1,10 @@
-### Currency rate script
+### Get currency exchange rate script
 
 *This repository contains*:
-1. Task to get API currency code
+1. Task to get API currency data
 2. SQLite DB `nbu_data.db`
-3. Visualization for currency rates done in Tableau
-4. SQL query and result
+3. Visualization for retrieved currency rates done in Tableau
+4. SQL queries and result screenshots
 5. CSV file with db data
 
 *Task is executed in next steps*:
@@ -24,9 +24,9 @@ Example of logs after task run:
 2025-04-17 20:48:05,944 - INFO - *** Saving data for currency code GBP for 20250216 - 20250417
 2025-04-17 20:48:05,948 - INFO - Inserted 183 lines into db
 ```
-Install Db Browser for SQLite to check data
+Retrieved data can be checked via DB Browser for SQLite.
 
 To run this task automatically in cloud:
-- run by scheduling task as a cron job OR via schedule python lib on any cloud Linux server like EC2
-- via AWS lambda to see task run status, logs, access to code etc.(better for monitoring & visibility)
-- via Aiflow/Databricks to see task run status, logs, access to code etc. (better for monitoring & visibility)
+- run as a cron job OR via schedule python lib on any cloud Linux server like EC2 (basic approach)
+- via AWS Lambda to see task run status, logs, have access to code etc. (better for monitoring & visibility)
+- via Aiflow/Databricks to see task run status, logs, have access to code etc. (better for monitoring & visibility)
